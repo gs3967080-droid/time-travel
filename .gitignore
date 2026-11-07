@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+
+# 构建产物（npm run build 输出到根目录 dist/）
+dist/
+.vite/
+
+# 运行时临时目录：esbuild / 浏览器调试 / 截图（scripts/run.js 会用）
+.tmp/
+
+# 数据库与降级存储（database/data/ 下为本地运行时数据）
+database/data/*.db
+database/data/*.db-wal
+database/data/*.db-shm
+database/data/store.json
+
+# 本地环境与系统杂项
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-error.log*

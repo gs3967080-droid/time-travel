@@ -1,0 +1,12 @@
+{
+  "opening": "叮——时空锚点校准完成。宿主意识已接入「历史枢纽」，秦、唐、清三条时间线正在解算。滚动右侧跃迁舱，选择你的落点。",
+  "enterLabel": "接入时间线",
+  "dataSource": "历史枢纽档案",
+  "timelineTitle": "时间跃迁舱",
+  "timelineHint": "拖动滑轨、滚轮或方向键，校准朝代坐标",
+  "systemName": "时空跃迁 · 历史枢纽",
+  "systemTag": "HISTORY HUB / ONLINE",
+  "currentHost": "宿主：第零号观测者",
+  "timelineLabel": "历史同步率",
+  "returnLabel": "返回校正台"
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1024" viewBox="0 0 2048 1024">
+  <defs>
+    <radialGradient id="ocean" cx="48%" cy="38%" r="68%">
+      <stop offset="0" stop-color="#0c3134"/>
+      <stop offset="0.58" stop-color="#06181c"/>
+      <stop offset="1" stop-color="#020809"/>
+    </radialGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28514d"/>
+      <stop offset="0.52" stop-color="#16322f"/>
+      <stop offset="1" stop-color="#0b1d1c"/>
+    </linearGradient>
+    <pattern id="microgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H24M.5 0V24" fill="none" stroke="#36f5e6" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="2048" height="1024" fill="url(#ocean)"/>
+  <rect width="2048" height="1024" fill="url(#microgrid)"/>
+
+  <g fill="none" stroke="#36f5e6" stroke-opacity=".12" stroke-width="2">
+    <path d="M0 170H2048M0 341H2048M0 512H2048M0 683H2048M0 854H2048"/>
+    <path d="M256 0V1024M512 0V1024M768 0V1024M1024 0V1024M1280 0V1024M1536 0V1024M1792 0V1024"/>
+  </g>
+  <path d="M0 512H2048" fill="none" stroke="#e7c071" stroke-opacity=".12" stroke-width="3"/>
+
+  <g fill="url(#land)" fill-opacity=".94" stroke="#5a9f96" stroke-opacity=".35" stroke-width="3">
+    <path d="M118 208 202 147 317 135 407 173 469 245 444 310 380 330 338 389 269 371 227 315 151 293 103 253Z"/>
+    <path d="M361 397 442 395 482 446 457 507 413 552 397 625 353 666 322 608 337 525 311 461Z"/>
+    <path d="M707 437 793 404 886 427 942 503 914 604 861 704 803 747 751 695 713 585 679 502Z"/>
+    <path d="M1012 204 1101 164 1221 178 1312 225 1434 203 1534 223 1611 282 1745 285 1881 341 1937 430 1889 504 1778 535 1698 508 1611 554 1512 523 1411 548 1301 501 1210 517 1134 461 1052 450 972 366 957 285 1010 261Z"/>
+    <path d="M1004 441 1101 414 1210 450 1281 530 1244 638 1184 731 1096 775 1025 713 982 605 956 512Z"/>
+    <path d="M1480 504 1565 527 1621 599 1594 680 1519 704 1461 636 1440 560Z"/>
+    <path d="M1675 699 1761 674 1844 719 1818 805 1748 856 1671 810 1639 748Z"/>
+    <path d="M1253 844 1293 814 1337 828 1346 876 1308 910 1261 892Z"/>
+    <path d="M884 807 912 787 935 813 919 847 889 838Z"/>
+  </g>
+
+  <g fill="#36f5e6" fill-opacity=".62" filter="url(#glow)">
+    <circle cx="1438" cy="392" r="5"/>
+    <circle cx="1464" cy="410" r="3"/>
+    <circle cx="1409" cy="424" r="3.5"/>
+  </g>
+</svg>
+

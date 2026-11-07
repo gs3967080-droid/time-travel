@@ -1,0 +1,421 @@
+[
+  {
+    "dynasty": "秦朝",
+    "mapKey": "qin",
+    "yearStart": -221,
+    "yearEnd": -206,
+    "color": "#e7c071",
+    "heading": "书同文 · 车同轨",
+    "summary": "铁骑止于咸阳，六国舆图第一次被写入同一卷山河。",
+    "people": [
+      {
+        "id": "qin_shihuang",
+        "name": "秦始皇",
+        "role": "秦朝皇帝",
+        "bio": "扫灭六国并建立中央集权秩序，以郡县制、统一文字与度量衡重塑天下。"
+      },
+      {
+        "id": "li_si",
+        "name": "李斯",
+        "role": "丞相",
+        "bio": "法家重臣，参与统一制度与文字改革，也是沙丘之变中的关键人物。"
+      },
+      {
+        "id": "zhao_gao",
+        "name": "赵高",
+        "role": "中车府令",
+        "bio": "深得秦始皇信任的近臣，在沙丘之变后掌握宫廷权力并改变继承顺序。"
+      },
+      {
+        "id": "fu_su",
+        "name": "扶苏",
+        "role": "公子",
+        "bio": "秦始皇长子，因直谏被派往上郡监军，在帝位交接的暗流中成为争夺焦点。"
+      },
+      {
+        "id": "meng_tian",
+        "name": "蒙恬",
+        "role": "北疆将军",
+        "bio": "统领北方边防并修筑长城，与扶苏共同掌握秦帝国最重要的军事屏障。"
+      }
+    ],
+    "relations": [
+      {
+        "source": "qin_shihuang",
+        "target": "li_si",
+        "label": "君臣 · 制度同路"
+      },
+      {
+        "source": "qin_shihuang",
+        "target": "fu_su",
+        "label": "父子 · 继承裂隙"
+      },
+      {
+        "source": "qin_shihuang",
+        "target": "meng_tian",
+        "label": "君主 · 北疆重将"
+      },
+      {
+        "source": "zhao_gao",
+        "target": "li_si",
+        "label": "沙丘同盟"
+      },
+      {
+        "source": "zhao_gao",
+        "target": "fu_su",
+        "label": "权力对立"
+      },
+      {
+        "source": "fu_su",
+        "target": "meng_tian",
+        "label": "监军 · 边防同盟"
+      }
+    ],
+    "events": [
+      {
+        "id": "qin_unification",
+        "title": "秦统六合",
+        "year": -221,
+        "lat": 34.3416,
+        "lng": 108.7092,
+        "locationName": "咸阳",
+        "rpgContext": "警报穿透咸阳宫阙：六国旧印正在苏醒，诸侯之名试图重写郡县。宿主，传国玉玺已落入你的掌心。此刻一念，将决定天下继续合卷，还是再度裂土。",
+        "options": [
+          {
+            "text": "奉玺推行郡县，令天下同轨",
+            "tone": "stable",
+            "result": "青色诏令自咸阳流向九州。时间线归位，书同文、车同轨的秩序在星图上连成一线。"
+          },
+          {
+            "text": "焚尽旧籍，强抹六国之名",
+            "tone": "unstable",
+            "result": "赤色警告瞬间淹没宫城。历史的墨迹化为灰烬，时间线失去可追溯的锚点，宿主被强制弹回星轨。"
+          }
+        ]
+      },
+      {
+        "id": "qin_burn",
+        "title": "焚书坑儒",
+        "year": -213,
+        "lat": 34.38,
+        "lng": 109.28,
+        "locationName": "骊山",
+        "rpgContext": "叮！咸阳北阙火光冲天，竹简在烈焰里卷曲成灰。系统提示：诸子百家的记忆正在从时间线上被抹除。",
+        "options": [
+          {
+            "text": "拦下诏书，私藏百家典籍",
+            "tone": "stable",
+            "result": "系统判定：文明火种已转移。宿主被标记为「时间线违逆者」。"
+          },
+          {
+            "text": "顺承旨意，令思想归于一统",
+            "tone": "unstable",
+            "result": "系统崩溃：思想维度坍缩，后世千年的注脚只剩一种笔迹。"
+          }
+        ]
+      },
+      {
+        "id": "qin_dze",
+        "title": "大泽乡起义",
+        "year": -209,
+        "lat": 33.65,
+        "lng": 116.87,
+        "locationName": "大泽乡",
+        "rpgContext": "叮！大雨失期，戍卒的火把在芦苇荡里连成一线。系统检测到「王侯将相宁有种乎」正在改写帝国底层代码。",
+        "options": [
+          {
+            "text": "揭竿而起，接入叛军时间线",
+            "tone": "unstable",
+            "result": "系统警告：帝国进程异常终止，宿主进入乱世分支。"
+          },
+          {
+            "text": "按律上报，尝试修补徭役参数",
+            "tone": "unstable",
+            "result": "系统判定：补丁无效。历史惯性不可覆写。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dynasty": "唐朝",
+    "mapKey": "tang",
+    "yearStart": 618,
+    "yearEnd": 907,
+    "color": "#36f5e6",
+    "heading": "天宝余晖 · 长安夜行",
+    "summary": "万国灯火沿朱雀大街铺开，而范阳的鼓角已压在盛世背面。",
+    "people": [
+      {
+        "id": "tang_xuanzong",
+        "name": "唐玄宗",
+        "role": "唐朝皇帝",
+        "bio": "开创开元盛世，也在天宝后期将帝国推向安史之乱的权力漩涡。"
+      },
+      {
+        "id": "yang_guifei",
+        "name": "杨贵妃",
+        "role": "贵妃",
+        "bio": "盛唐宫廷最具象征性的人物之一，其家族权势与玄宗晚年的政治选择紧密相连。"
+      },
+      {
+        "id": "an_lushan",
+        "name": "安禄山",
+        "role": "范阳节度使",
+        "bio": "握有北方重兵的藩镇将领，以清君侧为名发动叛乱，揭开安史之乱。"
+      },
+      {
+        "id": "yang_guozhong",
+        "name": "杨国忠",
+        "role": "宰相",
+        "bio": "杨贵妃族兄，权倾朝野并与安禄山长期对立，其决策加速了危机爆发。"
+      },
+      {
+        "id": "guo_ziyi",
+        "name": "郭子仪",
+        "role": "朔方节度使",
+        "bio": "在安史之乱中力挽危局，成为唐朝延续与后续平叛的重要军事支柱。"
+      }
+    ],
+    "relations": [
+      {
+        "source": "tang_xuanzong",
+        "target": "yang_guifei",
+        "label": "君王与宠妃"
+      },
+      {
+        "source": "tang_xuanzong",
+        "target": "an_lushan",
+        "label": "倚重 · 猜忌"
+      },
+      {
+        "source": "yang_guifei",
+        "target": "yang_guozhong",
+        "label": "同族 · 权势相连"
+      },
+      {
+        "source": "yang_guozhong",
+        "target": "an_lushan",
+        "label": "朝堂权斗"
+      },
+      {
+        "source": "tang_xuanzong",
+        "target": "guo_ziyi",
+        "label": "临危受命"
+      },
+      {
+        "source": "guo_ziyi",
+        "target": "an_lushan",
+        "label": "平叛敌对"
+      },
+      {
+        "source": "yang_guifei",
+        "target": "an_lushan",
+        "label": "政治依附"
+      }
+    ],
+    "events": [
+      {
+        "id": "tang_anshi",
+        "title": "安史之乱",
+        "year": 755,
+        "lat": 34.26,
+        "lng": 108.94,
+        "locationName": "长安",
+        "rpgContext": "叮！系统检测到宿主处于唐朝天宝年间。安禄山已在范阳起兵，长安仍沉醉于霓裳曲。驿站密报与宫中捷报互相矛盾，留给你的时间只剩一夜。宿主，请选择你要相信的那条历史。",
+        "options": [
+          {
+            "text": "封存密报，先稳军心与粮道",
+            "tone": "stable",
+            "result": "系统核对驿路与仓廪，时间线暂时稳住。长安没有立刻陷落，但范阳的烽火仍在地平线外燃烧。"
+          },
+          {
+            "text": "听信捷报，继续长安夜宴",
+            "tone": "unstable",
+            "result": "系统崩溃：战乱爆发，长安梦碎。历史线从盛世骤然折断，宿主被迫转移至下一处时空裂隙。"
+          }
+        ]
+      },
+      {
+        "id": "tang_fanyang",
+        "title": "范阳起兵",
+        "year": 755,
+        "lat": 39.9,
+        "lng": 116.4,
+        "locationName": "范阳",
+        "rpgContext": "叮！三镇节度使的旌旗在北境展开，系统捕获到一段被加密的军令：「讨杨国忠」。这是时间线裂缝的起点。",
+        "options": [
+          {
+            "text": "截获军令，提前布防潼关",
+            "tone": "stable",
+            "result": "系统判定：防线加固，盛世续命十二年。但历史仍在向原终点滑落。"
+          },
+          {
+            "text": "放任军令抵达长安",
+            "tone": "unstable",
+            "result": "系统警告：哥舒翰出战，潼关失守。宿主已被卷入逃亡队伍。"
+          }
+        ]
+      },
+      {
+        "id": "tang_yangzhou",
+        "title": "鉴真东渡",
+        "year": 753,
+        "lat": 32.39,
+        "lng": 119.42,
+        "locationName": "扬州",
+        "rpgContext": "叮！扬州港的第六次扬帆即将启航。系统提示：一段文明正准备跨海复制自己，而长安的灯火还不知道北方的风声。",
+        "options": [
+          {
+            "text": "护航东渡，保住这条文化支线",
+            "tone": "stable",
+            "result": "系统判定：跨海备份完成。时间线韧性 +8%。"
+          },
+          {
+            "text": "调船北上，支援潼关防线",
+            "tone": "unstable",
+            "result": "系统警告：文化支线断裂，但战争参数未改变。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dynasty": "清朝",
+    "mapKey": "qing",
+    "yearStart": 1636,
+    "yearEnd": 1912,
+    "color": "#9b6dff",
+    "heading": "海禁初开 · 烟销虎门",
+    "summary": "珠江潮声拍击旧帝国的门槛，远方炮舰已驶入未知海域。",
+    "people": [
+      {
+        "id": "qing_daoguang",
+        "name": "道光帝",
+        "role": "清朝皇帝",
+        "bio": "面对鸦片贸易与海防危机，在禁烟与议和之间反复权衡的帝国统治者。"
+      },
+      {
+        "id": "lin_zexu",
+        "name": "林则徐",
+        "role": "钦差大臣",
+        "bio": "受命赴粤查禁鸦片，在虎门公开销烟，并积极整顿海防与情报体系。"
+      },
+      {
+        "id": "deng_tingzhen",
+        "name": "邓廷桢",
+        "role": "两广总督",
+        "bio": "参与沿海禁烟与防务协同，与林则徐共同面对来自海上的压力。"
+      },
+      {
+        "id": "qi_shan",
+        "name": "琦善",
+        "role": "直隶总督",
+        "bio": "在战和转换之际进入外交前线，代表清廷与英方展开艰难谈判。"
+      },
+      {
+        "id": "charles_elliot",
+        "name": "义律",
+        "role": "英国驻华商务监督",
+        "bio": "鸦片贸易冲突中的英方代表，在虎门销烟后推动交涉与军事行动。"
+      }
+    ],
+    "relations": [
+      {
+        "source": "qing_daoguang",
+        "target": "lin_zexu",
+        "label": "禁烟任命"
+      },
+      {
+        "source": "qing_daoguang",
+        "target": "qi_shan",
+        "label": "君臣 · 议和授权"
+      },
+      {
+        "source": "lin_zexu",
+        "target": "deng_tingzhen",
+        "label": "沿海防务协同"
+      },
+      {
+        "source": "lin_zexu",
+        "target": "qi_shan",
+        "label": "主战与主和"
+      },
+      {
+        "source": "lin_zexu",
+        "target": "charles_elliot",
+        "label": "禁烟冲突"
+      },
+      {
+        "source": "qi_shan",
+        "target": "charles_elliot",
+        "label": "外交谈判"
+      }
+    ],
+    "events": [
+      {
+        "id": "qing_humen",
+        "title": "虎门销烟",
+        "year": 1839,
+        "lat": 22.817,
+        "lng": 113.673,
+        "locationName": "虎门",
+        "rpgContext": "海风携来异域的焦灼气味。虎门滩上烟土堆积如山，十三行却传来密信：若封禁不止，远洋舰影将循珠江而来。宿主，你的一纸令下，会让海浪替历史作证。",
+        "options": [
+          {
+            "text": "当众销烟，整饬海防与关务",
+            "tone": "stable",
+            "result": "潮水吞没最后一箱烟土。沿海防线被重新标注，时间线在虎门留下清晰的青色坐标。"
+          },
+          {
+            "text": "放宽关口，换取暂息兵锋",
+            "tone": "unstable",
+            "result": "紫色预警覆盖海图。短暂平静换来更深的裂隙，烟土与银流同时失控，历史锚点开始漂移。"
+          }
+        ]
+      },
+      {
+        "id": "qing_junjichu",
+        "title": "军机处设立",
+        "year": 1729,
+        "lat": 39.9,
+        "lng": 116.4,
+        "locationName": "京师",
+        "rpgContext": "叮！养心殿外的值房亮起一盏不灭的灯。系统检测到帝国的决策链路正在被压缩成一条极细的线。",
+        "options": [
+          {
+            "text": "保留议政王大臣会议",
+            "tone": "stable",
+            "result": "系统判定：权力未被完全收束，时间线出现微弱分叉。"
+          },
+          {
+            "text": "密折直达，一切归于一人",
+            "tone": "unstable",
+            "result": "系统警告：效率峰值达成，系统弹性归零。"
+          }
+        ]
+      },
+      {
+        "id": "qing_wuchang",
+        "title": "武昌首义",
+        "year": 1911,
+        "lat": 30.55,
+        "lng": 114.31,
+        "locationName": "武昌",
+        "rpgContext": "叮！楚望台军械库的枪声撕开夜幕。系统提示：帝制进程即将退出，两千年的时间轴正在合拢。",
+        "options": [
+          {
+            "text": "接入新纪元，保存全部记忆",
+            "tone": "stable",
+            "result": "系统判定：跃迁完成。历史枢纽归档，宿主可返回时间线。"
+          },
+          {
+            "text": "试图回滚到上一个王朝",
+            "tone": "unstable",
+            "result": "系统警告：回滚失败。时间不可逆。"
+          }
+        ]
+      }
+    ]
+  }
+]
