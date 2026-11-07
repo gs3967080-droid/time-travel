@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family:
+    Inter, "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  color: #e6ffff;
+  background: #020204;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+}
+
+/* 错误选择警告：由 React 挂载 .is-active 后播放一次。 */
+.danger-flash-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 22%,
+      rgba(255, 0, 0, 0.42) 72%,
+      rgba(130, 0, 0, 0.7) 100%
+    ),
+    rgba(255, 24, 24, 0.16);
+  box-shadow: inset 0 0 120px rgba(255, 0, 0, 0.65);
+}
+
+.danger-flash-overlay.is-active {
+  animation: danger-flash 780ms ease-out both;
+}
+
+@keyframes danger-flash {
+  0% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0.72;
+  }
+
+  18% {
+    opacity: 0.12;
+  }
+
+  30% {
+    opacity: 0.68;
+  }
+
+  42% {
+    opacity: 0.1;
+  }
+
+  56% {
+    opacity: 0.54;
+  }
+
+  70% {
+    opacity: 0.08;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .danger-flash-overlay.is-active {
+    animation: danger-flash-reduced 1.2s ease-out both;
+  }
+}
+
+@keyframes danger-flash-reduced {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  25%,
+  65% {
+    opacity: 0.22;
+  }
+}

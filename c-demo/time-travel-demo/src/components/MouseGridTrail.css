@@ -1,0 +1,75 @@
+.mouse-grid-trail {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.mouse-grid-trail[data-active="true"] {
+  opacity: var(--grid-opacity);
+}
+
+.mouse-grid-trail__patch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--grid-radius) * 2);
+  height: calc(var(--grid-radius) * 2);
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    #000 0%,
+    rgba(0, 0, 0, 0.82) 42%,
+    transparent 72%
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    #000 0%,
+    rgba(0, 0, 0, 0.82) 42%,
+    transparent 72%
+  );
+}
+
+.mouse-grid-trail__head {
+  z-index: 2;
+  opacity: 0;
+}
+
+.mouse-grid-trail[data-active="true"] .mouse-grid-trail__head {
+  opacity: 1;
+}
+
+.mouse-grid-trail__history {
+  z-index: 1;
+  opacity: 0.64;
+  animation-name: mouse-grid-trail-fade;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  will-change: opacity;
+}
+
+@keyframes mouse-grid-trail-fade {
+  0% {
+    opacity: 0.64;
+  }
+
+  72% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mouse-grid-trail__history {
+    animation-timing-function: ease-out;
+  }
+}
