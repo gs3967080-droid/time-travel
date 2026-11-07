@@ -1,6 +1,6 @@
 # Third-Party Historical Map Data
 
-The historical boundary files under `src/data/historicalMaps/` are extracted from:
+The historical boundary files under `frontend/src/data/historicalMaps/` are extracted from:
 
 - **江山时序 Jiangshan Atlas** — https://github.com/DeanChensj/jiangshan-map
 - Copyright © 2026 DeanChensj
